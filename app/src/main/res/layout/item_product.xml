@@ -6,24 +6,36 @@
     android:padding="25dp">
 
     <TextView
-        android:id="@+id/title_name"
+        android:id="@+id/title_id"
         android:layout_width="162dp"
         android:layout_height="29dp"
-        android:text="Название продукта"
+        android:text="ID"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/title_count"
+        android:id="@+id/title_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Количество"
+        android:text="Заголовок"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Цена"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

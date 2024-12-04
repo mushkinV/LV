@@ -12,8 +12,9 @@ class ProductAdapter(
     inner class ProductViewHolder(private val binding: ItemProductBinding)
      : RecyclerView.ViewHolder(binding.root) {
         fun bind(item: Product) {
-            binding.titleName.text = item.name
-            binding.titleCount.text = item.count.toString()
+            binding.titleId.text = item.id.toString()
+            binding.titleTitle.text = item.title
+            binding.titlePrice.text = item.price.toString()
 
         }
 
