@@ -1,6 +1,5 @@
-package com.example.data
+package com.example.data.api
 
-import com.example.data.api.ProductService
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Retrofit

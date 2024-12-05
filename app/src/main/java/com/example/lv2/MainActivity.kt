@@ -9,6 +9,7 @@ import com.example.lv2.databinding.ActivityMainBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -23,14 +24,11 @@ class MainActivity : AppCompatActivity() {
             val data = repository.getProducts()
             val adapter = ProductAdapter(data)
 
-            CoroutineScope(Dispatchers.Main).launch {
+            withContext(Dispatchers.Main) {
                 binding.recyclerViewProducts.adapter = adapter
                 binding.recyclerViewProducts.layoutManager = LinearLayoutManager(this@MainActivity)
 
             }
-
-
         }
-
     }
 }
